@@ -1,4 +1,9 @@
 # HR-Analytics-Employee-Attrition-and-Performance
+
+📄**Documentacion Completa Disponible**
+Este Readme.md presenta un resumen del análisis. Para acceder  la documentación completa, incluyendo metodología, análisis detallado, insights y recomendaciones finales, consulta el siguiente documento:
+📎 **[Descargar Documentacion (PDF)]
+<br>
 <br>
 
 ## 1. Resumen General:
@@ -13,7 +18,6 @@ factores están bajo el control de la organización y qué acciones se pueden ut
 o combatir la rotación. También analizaremos las tendencias actuales en Recursos Humanos y
 cómo estas se aplican a nuestro análisis; finalmente, con base en nuestros resultados,
 concluiremos con ideas y recomendaciones.
-<br>
 <br>
 <br>
 ## 2. Introducción:
@@ -69,7 +73,6 @@ variables.
 utilizando el modelo relacional como guía, y utilizaremos Power BI para crear visualizaciones
 interactivas que resalten patrones clave y faciliten la interpretación de los resultados. Esto nos
 permitirá presentar hallazgos clave de manera clara y efectiva.
-<br>
 <br>
 <br>
 ## 3. Descripción General de los Datos
@@ -186,8 +189,138 @@ Este enfoque tuvo las siguientes ventajas:
 
 **Legibilidad:** Al separar las categorías descriptivas de los valores numéricos, el modelo
 se volvió más comprensible.
-Flexibilidad: Permite realizar cálculos y consultas de manera específica para cada
+**Flexibilidad:** Permite realizar cálculos y consultas de manera específica para cada
 indicador sin afectar las demás métricas.
-Estandarización: Las tablas separadas facilitan la reutilización de las categorías
+**Estandarización:** Las tablas separadas facilitan la reutilización de las categorías
 descriptivas en otros análisis o reportes.
+
+## 5. Alcance
+El análisis incluirá la recopilación, almacenamiento y análisis de datos relacionados con el
+desempeño (evaluaciones de rendimiento), satisfacción (niveles de satisfacción en distintos
+aspectos) y nivel educativo de cada empleado. También se investigarán factores como balance
+vida-trabajo, antigüedad, y oportunidades de capacitación. Este análisis servirá para entender
+patrones y tendencias en el desarrollo de los empleados y su satisfacción, con el fin de hacer
+recomendaciones para mejorar el rendimiento y retener al talento.
+<br>
+<br>
+#### **Nivel Estratégico**
+Este análisis permitirá a los líderes organizacionales tomar decisiones informadas para:
+
+• Diseñar estrategias de retención enfocadas en los empleados de alto desempeño y aquellos
+en riesgo de abandono.
+
+• Identificar áreas críticas que afectan el compromiso de los empleados, como la gestión
+gerencial, el entorno laboral y las oportunidades de desarrollo.
+<br>
+<br>
+#### **Nivel Táctico**
+En un nivel más operativo, los resultados de este análisis servirán para:
+• Priorizar iniciativas de capacitación y desarrollo basadas en las áreas donde se
+identifiquen brechas de desempeño.
+
+• Optimizar procesos de evaluación de desempeño y satisfacción para asegurar una
+alineación con los objetivos estratégicos de la organización.
+<br>
+<br>
+#### **Nivel Operativo**
+Finalmente, el proyecto impactará a nivel de implementación en:
+
+• Creación de programas personalizados de capacitación y mentoría.
+
+• Ajustes específicos en políticas de trabajo, como esquemas híbridos o soporte para
+empleados con largas distancias al trabajo.
+<br>
+<br>
+
+## 6. Hipótesis
+
+Los empleados con mayor satisfacción laboral y balance entre vida laboral y personal tienden a
+permanecer más tiempo en la empresa, lo que reduce la tasa de otación (attrition) en
+comparación con aquellos que reportan menor satisfacción en estos aspectos.
+Este análisis buscará evaluar la relación entre la satisfacción laboral y la deserción laboral
+utilizando análisis multivariables. Se segmentarán los datos de acuerdo a diferentes
+departamentos y se realizarán análisis de regresión logística para identificar los factores más
+influyentes en la rotación de empleados. Además, se buscarán patrones en la antigüedad y las
+promociones para determinar su relación con la satisfacción y la retención.
+<br>
+<br>
+
+## 7. Herramientas
+• Excel para la lectura, limpieza y normalizacion de los datos.
+
+• PowerPoint para la creación del diseño del mockup.
+
+• Miro para la creación del diagrama entidad-relación (https://miro.com/).
+<br>
+<br>
+
+## 8. Conclusiones
+
+#### Factores Críticos de Rotación:
+
+• **Sales Representative:** Este rol presenta la mayor tasa de rotación.
+
+• **Stock Option Level:** Los empleados con nivel 0 tienen significativamente mayor
+rotación (65 % de los que abandonaron la empresa).
+
+• **OverTime:** Los empleados que realizan horas extra tienen una rotación mucho mayor
+(30,53 %).
+
+• **Business Travel:** Los empleados que viajan frecuentemente tienen una tasa de rotación
+del 24,91 %.43
+
+• **Monthly Income:** Más del 47 % de los empleados que abandonan la empresa tienen
+salarios inferiores a $3,000.
+<br>
+<br>
+#### Segmentación por Perfil Demográfico:
+• Los empleados jóvenes (<35 años) presentan las tasas de rotación más altas.
+
+• Los empleados solteros tienen mayor probabilidad de rotación.
+<br>
+<br>
+#### Satisfacción y Balance Laboral:
+• Bajos niveles de Job Satisfaction, Environment Satisfaction, WorkLife Balance y
+Relationship Satisfaction están asociados con mayores tasas de rotación.
+
+En resumen, los resultados confirman que los niveles de satisfacción y el balance entre
+vida laboral y personal son determinantes clave en la retención de empleados. Además,
+factores como salarios competitivos, planes de carrera y una mejor gestión del talento
+joven deben ser prioridad para reducir la rotación.
+<br>
+<br>
+## 9. Recomendaciones
+
+##### Incentivos Económicos
+• **Stock Options:** Introducir planes desde el inicio para roles críticos.
+
+• **Salarios Competitivos:** Ajustar los rangos salariales por debajo de $3,000 para
+reducir la rotación.
+<br>
+<br>
+#### Desarrollo de Carrera
+• Establecer programas de desarrollo profesional, especialmente para roles con alta
+rotación como Sales Representative.
+
+• Implementar estrategias para reducir la rotación temprana en los primeros años.
+Flexibilidad y Beneficios.
+
+• Ofrecer opciones de trabajo remoto y horarios flexibles para empleados con alta
+carga de viajes laborales.
+<br>
+<br>
+#### Relación con Managers
+• Capacitar a los gerentes para mejorar la retención en los primeros años y tras largos
+periodos de supervisión.
+<br>
+<br>
+#### Mejora de Satisfacción Laboral
+• Diseñar programas que fomenten el balance entre vida laboral y personal.
+
+• Mejorar las condiciones del entorno laboral para incrementar la satisfacción general.
+<br>
+<br>
+---
+📄**Para un análisis detallado, accede al informe completo.**
+📎 **[Descargar Documentacion (PDF)]
 
