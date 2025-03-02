@@ -1,19 +1,21 @@
 # HR-Analytics-Employee-Attrition-and-Performance
 
 1. Resumen General:
+   
 El objetivo de este informe es analizar la rotación de empleados. La rotación se describe
 como la pérdida gradual de empleados a lo largo del tiempo. Este fenómeno representa un
 problema importante para todas las organizaciones, ya que puede tener implicaciones en el
-personal, la moral de los empleados, los costos de los proyectos, la pérdida de experiencia y, en
-general, un obstáculo para el crecimiento organizacional. Examinaremos los factores más
+personal, la moral de los empleados, los costos de los proyectos, la pérdida de experiencia y,
+en general, un obstáculo para el crecimiento organizacional. Examinaremos los factores más
 importantes que influyen en la rotación dentro de una organización. Consideraremos si estos
-factores están bajo el control de la organización y qué acciones se pueden utilizar para mitigar o
-combatir la rotación. También analizaremos las tendencias actuales en Recursos Humanos y
+factores están bajo el control de la organización y qué acciones se pueden utilizar para mitigar
+o combatir la rotación. También analizaremos las tendencias actuales en Recursos Humanos y
 cómo estas se aplican a nuestro análisis; finalmente, con base en nuestros resultados,
 concluiremos con ideas y recomendaciones.
 
 
-3. Introducción:
+2. Introducción:
+   
 El capital humano es uno de los mayores activos que una organización puede poseer.
 Las empresas pueden gastar hasta un 70% de los costos totales del negocio en empleados. Estos
 costos incluyen salarios, formación, reclutamiento e inversiones en habilidades. Además,
@@ -62,7 +64,8 @@ interactivas que resalten patrones clave y faciliten la interpretación de los r
 permitirá presentar hallazgos clave de manera clara y efectiva,
 
 
-5. Descripción General de los Datos
+3. Descripción General de los Datos
+
 El núcleo de nuestro análisis deriva de un conjunto de datos disponible públicamente,
 que proporciona variables similares a las que tendría a disposición el personal típico de
 Recursos Humanos. Este conjunto de datos se puede encontrar en Kaggle como "HR
