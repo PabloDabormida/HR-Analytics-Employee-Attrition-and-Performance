@@ -1,6 +1,7 @@
 # HR-Analytics-Employee-Attrition-and-Performance
+<br>
 
-1. Resumen General:
+## 1. Resumen General:
    
 El objetivo de este informe es analizar la rotación de empleados. La rotación se describe
 como la pérdida gradual de empleados a lo largo del tiempo. Este fenómeno representa un
@@ -12,9 +13,10 @@ factores están bajo el control de la organización y qué acciones se pueden ut
 o combatir la rotación. También analizaremos las tendencias actuales en Recursos Humanos y
 cómo estas se aplican a nuestro análisis; finalmente, con base en nuestros resultados,
 concluiremos con ideas y recomendaciones.
-
-
-2. Introducción:
+<br>
+<br>
+<br>
+## 2. Introducción:
    
 El capital humano es uno de los mayores activos que una organización puede poseer.
 Las empresas pueden gastar hasta un 70% de los costos totales del negocio en empleados. Estos
@@ -67,14 +69,10 @@ variables.
 utilizando el modelo relacional como guía, y utilizaremos Power BI para crear visualizaciones
 interactivas que resalten patrones clave y faciliten la interpretación de los resultados. Esto nos
 permitirá presentar hallazgos clave de manera clara y efectiva.
-
-
-
-
-
-
-
-3. Descripción General de los Datos
+<br>
+<br>
+<br>
+## 3. Descripción General de los Datos
 
 El núcleo de nuestro análisis deriva de un conjunto de datos disponible públicamente,
 que proporciona variables similares a las que tendría a disposición el personal típico de
