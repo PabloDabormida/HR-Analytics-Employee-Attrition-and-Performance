@@ -77,13 +77,12 @@ permitirá presentar hallazgos clave de manera clara y efectiva.
 El núcleo de nuestro análisis deriva de un conjunto de datos disponible públicamente,
 que proporciona variables similares a las que tendría a disposición el personal típico de
 Recursos Humanos. Este conjunto de datos se puede encontrar en Kaggle como "HR
-Analytics Employee Attrition & Performance"(Fuente: https://www.kaggle.com/datasets/
-mahmoudemadabdallah/hr-analytics-employee-attrition-and-performance). Está
-compuesto por más de mil cuatrocientas observaciones y treinta y cinco columnas .
+Analytics Employee Attrition & Performance"(Fuente: https://www.kaggle.com/datasets/mahmoudemadabdallah/hr-analytics-employee-attrition-and-performance). Está
+compuesto por más de mil cuatrocientas observaciones y treinta y cinco columnas.
 Dentro del conjunto de datos, tenemos una combinación de tipos de datos numéricos y
-categóricos. Algunos ejemplos de tipos de datos numéricos incluyen la edad del empleado,5
-sus ingresos mensuales y los años que lleva trabajando.en la empresa. Como ejemplos de
+categóricos. Algunos ejemplos de tipos de datos numéricos incluyen la edad del empleado,
+sus ingresos mensuales y los años que lleva trabajando.en la empresa.Como ejemplos de
 variables categóricas tenemos la educación, el género, el puesto de trabajo o el departamento
-en el que trabaja el empleado. Es importante verificar la construcción del conjunto de datos
+en el que trabaja el empleado.Es importante verificar la construcción del conjunto de datos
 y sus tipos de variables, ya que la composición de los datos influye directamente en la
 naturaleza de lo que es posible en el proceso de análisis.
