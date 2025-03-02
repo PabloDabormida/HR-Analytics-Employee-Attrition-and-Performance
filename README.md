@@ -42,30 +42,30 @@ análisis exploratorio de datos, manipulación y limpieza de datos, preparación
 construcción y evaluación de modelos, y finalmente, visualización y análisis de datos utilizando
 Power BI.
 
-• Investigación Inicial: Comenzaremos con una revisión del conjunto de datos para
+• **Investigación Inicial:** Comenzaremos con una revisión del conjunto de datos para
 comprender su estructura, las variables disponibles y su relevancia con respecto a los objetivos
 del análisis. Esta etapa es fundamental para establecer el alcance del proyecto y anticipar posibles
 desafíos.
 
-• Manipulación y Limpieza de Datos: A continuación, procederemos a limpiar el
+• **Manipulación y Limpieza de Datos:** A continuación, procederemos a limpiar el
 conjunto de datos, abordando valores faltantes, duplicados y errores en los datos. Este paso
 garantiza que los datos sean confiables y estén listos para ser utilizados en análisis posteriores.
 
-• Normalizacion de Datos: Una vez que los datos estén limpios, los normalizaremos para
+• **Normalizacion de Datos:** Una vez que los datos estén limpios, los normalizaremos para
 asegurar que estén en un formato adecuado para el modelado. Esto incluye la transformación de
 variables y la codificación de datos categóricos.
 
-• Construcción del Modelo Relacional: Después de la normalización, procederemos a
+• **Construcción del Modelo Relacional:** Después de la normalización, procederemos a
 diseñar el modelo relacional, creando un diagrama entidad-relación (ER) que represente las
 relaciones entre las diferentes entidades en el conjunto de datos. Esto proporciona una base
 sólida para consultas estructuradas y análisis detallados.
 
-• Análisis Exploratorio de Datos (EDA): Se realiza un análisis descriptivo preliminar
+• **Análisis Exploratorio de Datos (EDA):** Se realiza un análisis descriptivo preliminar
 para identificar patrones, tendencias y anomalías en los datos. Mediante el uso de
 visualizaciones básicas, se obtiene una comprensión inicial de las relaciones clave entre las
 variables.
 
-• Análisis y Visualización de Datos: Finalmente, realizaremos un análisis detallado
+• **Análisis y Visualización de Datos:** Finalmente, realizaremos un análisis detallado
 utilizando el modelo relacional como guía, y utilizaremos Power BI para crear visualizaciones
 interactivas que resalten patrones clave y faciliten la interpretación de los resultados. Esto nos
 permitirá presentar hallazgos clave de manera clara y efectiva.
@@ -118,17 +118,17 @@ Se diseñó una tabla independiente llamada "Performances" que agrupa todos los 
 numéricos relacionados con la satisfacción y desempeño del empleado. Esto incluyó
 indicadores como:
 
-• JobSatisfaction.
+• **JobSatisfaction**
 
-• WorkLifeBalance.
+• **WorkLifeBalance**
 
-• EnvironmentSatisfaction.
+• **EnvironmentSatisfaction**
 
-• RelationshipSatisfaction
+• **RelationshipSatisfaction**
 
-• WorkLifeBalance
+• **WorkLifeBalance**
 
-• JobInvolvement
+• **JobInvolvement**
 
 <br>
 Esta decisión tuvo varias justificaciones:
@@ -141,3 +141,53 @@ se creó una estructura más clara y eficiente para el análisis en Power BI.
 
 - Escalabilidad: Permite agregar nuevas métricas relacionadas al desempeño en el
 futuro sin modificar otras tablas.
+<br>
+
+### 4.5. Creación del campo PerformanceID
+<br>
+
+Para identificar de manera única cada registro en la tabla "Performances", se generó un
+campo denominado PerformanceID. Este campo fue construido utilizando una fórmula
+en Excel:
+
+**= "PR" & FILA() - FILA(1)**
+
+Esta fórmula genera un identificador único para cada fila, con un formato del tipo PR1,
+PR2, ..., PR140. Esto no solo permitió enlazar la tabla "Performances" con otras tablas
+del modelo, sino que también aseguró la trazabilidad de cada registro.
+4.5. Creación del campo PerformanceID
+
+También se agrego el EmployeeID , campo por el cual se creara la relación con la tabla
+Employees.
+<br>
+<br>
+### 4.6. Creación de tablas separadas para indicadores específicos
+
+Con base en los indicadores de desempeño y satisfacción, se crearon tablas
+independientes para cada uno de los aspectos evaluados, como:
+
+• **JobSatisfaction:** Contiene los niveles descriptivos de satisfacción laboral.
+
+• **EnvironmentSatisfactionLevel:** Define el nivel de satisfacción con el
+ambiente laboral.
+
+• **WorkLifeBalanceLevel**: Clasifica las puntuaciones de equilibrio entre vida y trabajo.
+
+• **RelationshipSatisfactionLevel:** Define el nivel de satisfacción entre el empleado y
+el empleador.
+
+• **PerformanceRating:** Describe el rating del empleado basado en su performance en
+el trabajo segun su manager.
+
+• **JobInvolvemente:** Define el nivel de compromiso del empleado con el trabajo.
+<br>
+<br>
+Este enfoque tuvo las siguientes ventajas:
+
+**Legibilidad:** Al separar las categorías descriptivas de los valores numéricos, el modelo
+se volvió más comprensible.
+Flexibilidad: Permite realizar cálculos y consultas de manera específica para cada
+indicador sin afectar las demás métricas.
+Estandarización: Las tablas separadas facilitan la reutilización de las categorías
+descriptivas en otros análisis o reportes.
+
