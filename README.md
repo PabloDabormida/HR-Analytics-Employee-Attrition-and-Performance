@@ -66,7 +66,12 @@ variables.
 • Análisis y Visualización de Datos: Finalmente, realizaremos un análisis detallado
 utilizando el modelo relacional como guía, y utilizaremos Power BI para crear visualizaciones
 interactivas que resalten patrones clave y faciliten la interpretación de los resultados. Esto nos
-permitirá presentar hallazgos clave de manera clara y efectiva,
+permitirá presentar hallazgos clave de manera clara y efectiva.
+
+
+
+
+
 
 
 3. Descripción General de los Datos
