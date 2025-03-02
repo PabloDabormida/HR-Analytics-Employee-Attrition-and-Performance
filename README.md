@@ -1,8 +1,11 @@
 # HR-Analytics-Employee-Attrition-and-Performance
 
-📄**Documentacion Completa Disponible**
-Este Readme.md presenta un resumen del análisis. Para acceder  la documentación completa, incluyendo metodología, análisis detallado, insights y recomendaciones finales, consulta el siguiente documento:
-📎 **[Descargar Documentacion (PDF)]
+<br>
+
+📄 **Documentacion Completa Disponible**
+
+Este Readme.md presenta un resumen del análisis. Para acceder a la documentación completa, incluyendo metodología, análisis detallado, insights y recomendaciones finales, consulta el siguiente documento:
+📎 **[Descargar Documentacion (PDF)](https://github.com/PabloDabormida/HR-Analytics-Employee-Attrition-and-Performance/blob/main/Documentacion.pdf)**
 <br>
 <br>
 
@@ -318,9 +321,10 @@ periodos de supervisión.
 • Diseñar programas que fomenten el balance entre vida laboral y personal.
 
 • Mejorar las condiciones del entorno laboral para incrementar la satisfacción general.
+
 <br>
-<br>
+
 ---
 📄**Para un análisis detallado, accede al informe completo.**
-📎 **[Descargar Documentacion (PDF)]
+📎 **[Descargar Documentacion (PDF)](https://github.com/PabloDabormida/HR-Analytics-Employee-Attrition-and-Performance/blob/main/Documentacion.pdf)**
 
