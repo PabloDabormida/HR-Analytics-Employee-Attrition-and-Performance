@@ -44,20 +44,25 @@ Power BI.
 comprender su estructura, las variables disponibles y su relevancia con respecto a los objetivos
 del análisis. Esta etapa es fundamental para establecer el alcance del proyecto y anticipar posibles
 desafíos.
+
 • Manipulación y Limpieza de Datos: A continuación, procederemos a limpiar el
 conjunto de datos, abordando valores faltantes, duplicados y errores en los datos. Este paso
 garantiza que los datos sean confiables y estén listos para ser utilizados en análisis posteriores.
+
 • Normalizacion de Datos: Una vez que los datos estén limpios, los normalizaremos para
 asegurar que estén en un formato adecuado para el modelado. Esto incluye la transformación de
-variables y la codificación de datos categóricos.4
+variables y la codificación de datos categóricos.
+
 • Construcción del Modelo Relacional: Después de la normalización, procederemos a
 diseñar el modelo relacional, creando un diagrama entidad-relación (ER) que represente las
 relaciones entre las diferentes entidades en el conjunto de datos. Esto proporciona una base
 sólida para consultas estructuradas y análisis detallados.
+
 • Análisis Exploratorio de Datos (EDA): Se realiza un análisis descriptivo preliminar
 para identificar patrones, tendencias y anomalías en los datos. Mediante el uso de
 visualizaciones básicas, se obtiene una comprensión inicial de las relaciones clave entre las
 variables.
+
 • Análisis y Visualización de Datos: Finalmente, realizaremos un análisis detallado
 utilizando el modelo relacional como guía, y utilizaremos Power BI para crear visualizaciones
 interactivas que resalten patrones clave y faciliten la interpretación de los resultados. Esto nos
