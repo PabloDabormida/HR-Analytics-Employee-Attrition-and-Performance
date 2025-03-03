@@ -254,6 +254,8 @@ promociones para determinar su relación con la satisfacción y la retención.
 • PowerPoint para la creación del diseño del mockup.
 
 • Miro para la creación del diagrama entidad-relación (https://miro.com/).
+
+• PowerBI para la crreacion del dhasboard.
 <br>
 <br>
 
