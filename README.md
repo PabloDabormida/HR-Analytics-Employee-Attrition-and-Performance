@@ -288,13 +288,22 @@ salarios inferiores a $3,000.
 #### Satisfacción y Balance Laboral:
 • Bajos niveles de Job Satisfaction, Environment Satisfaction, WorkLife Balance y
 Relationship Satisfaction están asociados con mayores tasas de rotación.
-
+<br>
+<br>
 En resumen, los resultados confirman que los niveles de satisfacción y el balance entre
 vida laboral y personal son determinantes clave en la retención de empleados. Además,
 factores como salarios competitivos, planes de carrera y una mejor gestión del talento
 joven deben ser prioridad para reducir la rotación.
 <br>
 <br>
+
+## 📊 **Explorar el dashboard interactivo completo**
+
+📄 **Link Directo**
+📎 [Download Dashboard (PBIX)](https://github.com/PabloDabormida/HR-Analytics-Employee-Attrition-and-Performance/blob/7bc40df342a16e89edcbdcfec7dbb78c940aab78/HR%20Analytics%20Employee%20Attrition%20and%20Performance.pbix)
+<br>
+<br>
+
 ## 9. Recomendaciones
 
 ##### Incentivos Económicos
