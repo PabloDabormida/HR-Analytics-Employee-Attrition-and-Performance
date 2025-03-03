@@ -255,7 +255,7 @@ promociones para determinar su relación con la satisfacción y la retención.
 
 • Miro para la creación del diagrama entidad-relación (https://miro.com/).
 
-• PowerBI para la crreacion del dhasboard.
+• Power BI para la crreacion del dashboard.
 <br>
 <br>
 
