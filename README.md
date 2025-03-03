@@ -1,5 +1,6 @@
 # HR-Analytics-Employee-Attrition-and-Performance
 
+🇬🇧 **This project is available in [English](README_EN.md)**  
 <br>
 
 📄 **Documentacion Completa Disponible**
