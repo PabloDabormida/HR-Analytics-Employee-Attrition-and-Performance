@@ -108,7 +108,7 @@ At a more operational level, the results of this analysis will help:
 • Prioritize training and development initiatives based on areas where performance gaps are identified.  
 • Optimize performance and satisfaction evaluation processes to ensure alignment with the organization's strategic objectives.  
 
-#### **Operational Level**
+#### **Operational Level**<br>
 Finally, the project will impact implementation in:  
 • Creation of personalized training and mentoring programs.  
 • Specific adjustments in work policies, such as hybrid schemes or support for employees with long commutes.  
