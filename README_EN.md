@@ -132,5 +132,48 @@ Employees with higher job satisfaction and work-life balance tend to stay longer
 • **OverTime:** Employees who work overtime have a much higher turnover rate (30.53%).  
 • **Business Travel:** Employees who travel frequently have a turnover rate of 24.91%.  
 • **Monthly Income:** More than 47% of employees who leave the company have salaries below $3,000.  
+<br>
+
+## 📊 **Explore the full interactive dashboard**
+
+📄 **Direct Link**
+📎 [Download Dashboard (PBIX)](https://github.com/PabloDabormida/HR-Analytics-Employee-Attrition-and-Performance/blob/7bc40df342a16e89edcbdcfec7dbb78c940aab78/HR%20Analytics%20Employee%20Attrition%20and%20Performance.pbix)
+<br>
+<br>
+
+## 9. Recommendations
+
+##### Financial Incentives
+• **Stock Options:** Introduce plans from the start for critical roles.
+
+• **Competitive Salaries:** Adjust salary ranges below $3,000 to
+reduce turnover.
+<br>
+<br>
+#### Career Development
+• Establish professional development programs, especially for roles with high turnover
+such as Sales Representative.
+
+• Implement strategies to reduce early turnover in the first few years.
+Flexibility and Benefits.
+
+• Offer remote work options and flexible schedules for employees with a high
+workload.
+<br>
+<br>
+#### Relationship with Managers
+• Train managers to improve retention in the early years and after long periods of supervision.
+<br>
+<br>
+#### Improving Job Satisfaction
+• Design programs that encourage work-life balance.
+
+• Improve work environment conditions to increase overall satisfaction.
+
+<br>
+
+---
+📄**For a detailed analysis, access the full report.**
+📎 **[Download Documentation (PDF)](https://github.com/PabloDabormida/HR-Analytics-Employee-Attrition-and-Performance/blob/main/Documentacion.pdf)**
 
 
