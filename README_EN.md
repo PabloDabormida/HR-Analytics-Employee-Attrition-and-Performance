@@ -8,12 +8,10 @@
 This Readme.md provides a summary of the analysis. To access the full documentation, including methodology, detailed analysis, insights, and final recommendations, check the following document:  
 📎 **[Download Documentation (PDF)](https://github.com/PabloDabormida/HR-Analytics-Employee-Attrition-and-Performance/blob/main/Documentacion.pdf)**  
 <br>
-<br>
 
 ## 1. General Summary:
    
 The objective of this report is to analyze employee attrition. Attrition is described as the gradual loss of employees over time. This phenomenon represents a significant problem for all organizations as it can impact staff, employee morale, project costs, loss of experience, and overall, an obstacle to organizational growth. We will examine the most important factors influencing attrition within an organization. We will consider whether these factors are within the organization’s control and what actions can be taken to mitigate or combat attrition. We will also analyze current trends in Human Resources and how they apply to our analysis; finally, based on our results, we will conclude with ideas and recommendations.  
-<br>
 <br>
 
 ## 2. Introduction:
@@ -36,7 +34,6 @@ In this report, we will analyze the validity of these reasons through a thorough
 
 • **Data Analysis and Visualization:** Finally, we will conduct a detailed analysis using the relational model as a guide, and we will use Power BI to create interactive visualizations that highlight key patterns and facilitate result interpretation. This allows us to present key findings clearly and effectively.  
 <br>
-<br>
 
 ## 3. General Data Description
 
@@ -44,81 +41,94 @@ The core of our analysis comes from a publicly available dataset, which provides
 
 The dataset includes a mix of numerical and categorical data types. Some examples of numerical data types include employee age, monthly income, and years working at the company. Examples of categorical variables include education, gender, job title, or the department in which the employee works. It is essential to verify the dataset’s structure and variable types, as data composition directly influences the nature of the analysis process.  
 <br>
-<br>
 
 ## 4. Data Processing
+### 4.1. Conversion of the CSV file to a structured table
+The analysis started from a CSV file. Although the file was identified as .csv, it had the .xls extension, which was corrected by opening it in Excel and saving it as an authentic .csv file. This ensured that the data could be correctly processed in Power BI.  
+Subsequently, the file was converted into a structured table in Excel to facilitate data manipulation. This conversion allowed filters to be applied, data to be sorted, and operations to be performed on specific columns efficiently.  
 
-To ensure the accuracy and reliability of the data used in our analysis, we performed the following data processing steps:
+### 4.2. Removal of unnecessary columns
+The dataset columns were reviewed, and those that did not add direct value to the proposed analysis were removed. For example, irrelevant fields such as EmployeeCount, EmployeeNumber, or any data unrelated to performance or job satisfaction. This reduction of columns not only simplified the data model but also improved the performance of the analysis by reducing complexity.  
 
-- **Handling Missing Values:** We identified and managed missing values through appropriate techniques such as imputation or removal, depending on the context of the variable.  
-- **Data Cleaning:** We eliminated duplicate records, standardized formats, and corrected inconsistencies in categorical variables.  
-- **Data Transformation:** Certain variables were transformed to ensure consistency and improve interpretability. For instance, categorical variables were encoded into numerical values where necessary.  
-- **Feature Engineering:** We created new variables based on existing data to extract more relevant insights.  
+### 4.3. Duplicate verification
+The data was reviewed to identify and eliminate duplicates in fields that should contain unique values, such as EmployeeID. This was necessary to ensure data integrity and avoid inconsistencies in the subsequent analysis.  
 
-## 5. Scope  
+### 4.4. Creation of the "Performances" table
+An independent table called "Performances" was designed, grouping all numerical data related to employee satisfaction and performance. This included indicators such as:  
 
-The analysis includes the collection, storage, and examination of data related to employee performance (performance evaluations), satisfaction (levels of satisfaction in various aspects), and educational background. Additionally, factors such as work-life balance, tenure, and training opportunities will be explored. This analysis aims to identify patterns and trends in employee development and satisfaction, providing recommendations to improve performance and retain talent.  
+• **JobSatisfaction**  
+• **WorkLifeBalance**  
+• **EnvironmentSatisfaction**  
+• **RelationshipSatisfaction**  
+• **WorkLifeBalance**  
+• **JobInvolvement**  
 
-### **Strategic Level**  
+This decision had several justifications:  
 
+- **Standardization:** Centralizing all numerical indicators in a single table facilitates the visualization of performance metrics.  
+- **Model optimization:** By separating quantitative data from descriptive ones, a clearer and more efficient structure for analysis in Power BI was created.  
+- **Scalability:** It allows new performance-related metrics to be added in the future without modifying other tables.  
+
+### 4.5. Creation of the PerformanceID field
+To uniquely identify each record in the "Performances" table, a field called PerformanceID was generated. This field was constructed using a formula in Excel:  
+
+**= "PR" & ROW() - ROW(1)**  
+
+This formula generates a unique identifier for each row, with a format like PR1, PR2, ..., PR140. This not only allowed linking the "Performances" table with other tables in the model but also ensured the traceability of each record.  
+
+The EmployeeID field was also added, which will be used to create the relationship with the "Employees" table.  
+
+### 4.6. Creation of separate tables for specific indicators
+Based on performance and satisfaction indicators, independent tables were created for each evaluated aspect, such as:  
+
+• **JobSatisfaction:** Contains the descriptive levels of job satisfaction.  
+• **EnvironmentSatisfactionLevel:** Defines the level of satisfaction with the work environment.  
+• **WorkLifeBalanceLevel**: Classifies scores for work-life balance.  
+• **RelationshipSatisfactionLevel:** Defines the level of satisfaction between the employee and the employer.  
+• **PerformanceRating:** Describes the employee's rating based on their performance at work according to their manager.  
+• **JobInvolvement:** Defines the employee's level of commitment to work.  
+
+This approach had the following advantages:  
+
+- **Readability:** By separating descriptive categories from numerical values, the model became more understandable.  
+- **Flexibility:** It allows calculations and queries to be performed specifically for each indicator without affecting other metrics.  
+- **Standardization:** Separate tables facilitate the reuse of descriptive categories in other analyses or reports.  
+
+## 5. Scope
+The analysis will include the collection, storage, and analysis of data related to performance (performance evaluations), satisfaction (satisfaction levels in various aspects), and the educational level of each employee. Factors such as work-life balance, seniority, and training opportunities will also be investigated. This analysis will help understand patterns and trends in employee development and satisfaction to make recommendations to improve performance and retain talent.  
+
+#### **Strategic Level**
 This analysis will enable organizational leaders to make informed decisions to:  
 
-- Design retention strategies focused on high-performing employees and those at risk of leaving.  
-- Identify critical areas affecting employee engagement, such as managerial leadership, work environment, and development opportunities.  
+• Design retention strategies focused on high-performing employees and those at risk of leaving.  
+• Identify critical areas affecting employee engagement, such as managerial management, the work environment, and development opportunities.  
 
-### **Tactical Level**  
+#### **Tactical Level**
+At a more operational level, the results of this analysis will help:  
+• Prioritize training and development initiatives based on areas where performance gaps are identified.  
+• Optimize performance and satisfaction evaluation processes to ensure alignment with the organization's strategic objectives.  
 
-At a more operational level, the results of this analysis will serve to:  
+#### **Operational Level**
+Finally, the project will impact implementation in:  
+• Creation of personalized training and mentoring programs.  
+• Specific adjustments in work policies, such as hybrid schemes or support for employees with long commutes.  
 
-- Prioritize training and development initiatives based on identified performance gaps.  
-- Optimize performance and satisfaction evaluation processes to align them with the organization’s strategic goals.  
+## 6. Hypothesis
+Employees with higher job satisfaction and work-life balance tend to stay longer in the company, reducing the attrition rate compared to those who report lower satisfaction in these aspects. This analysis will seek to evaluate the relationship between job satisfaction and turnover using multivariable analysis. Data will be segmented according to different departments, and logistic regression analysis will be conducted to identify the most influential factors in employee turnover. Additionally, patterns in seniority and promotions will be explored to determine their relationship with satisfaction and retention.  
 
-### **Operational Level**  
-
-Finally, this project will impact implementation by:  
-
-- Creating personalized training and mentoring programs.  
-- Making specific policy adjustments, such as hybrid work schemes or support for employees with long commutes.  
-
-## 6. Hypothesis  
-
-We formulated the following hypotheses regarding employee attrition:  
-
-1. Salary dissatisfaction significantly increases the likelihood of employee attrition.  
-2. Lack of career growth opportunities is one of the main drivers of employee turnover.  
-3. Work-life balance issues contribute to higher attrition rates.  
-4. Employees with higher job satisfaction are less likely to leave the company.  
-
-## 7. Tools  
-
-To conduct this analysis, we used various tools, including:  
-
-- **Python** for data processing and exploratory analysis.  
-- **Pandas & NumPy** for data manipulation.  
-- **Matplotlib & Seaborn** for data visualization.  
-- **Power BI** for interactive dashboards.  
+## 7. Tools
+• Excel for data reading, cleaning, and normalization.  
+• PowerPoint for creating the mockup design.  
+• Miro for creating the entity-relationship diagram (https://miro.com/).  
+• Power BI for dashboard creation.  
 
 ## 8. Conclusions  
 
-The findings from this analysis provide valuable insights into employee attrition. Some key conclusions include:  
+#### Critical Turnover Factors:  
+• **Sales Representative:** This role has the highest turnover rate.  
+• **Stock Option Level:** Employees at level 0 have significantly higher turnover (65% of those who left the company).  
+• **OverTime:** Employees who work overtime have a much higher turnover rate (30.53%).  
+• **Business Travel:** Employees who travel frequently have a turnover rate of 24.91%.  
+• **Monthly Income:** More than 47% of employees who leave the company have salaries below $3,000.  
 
-- Employees with lower compensation and fewer career development opportunities are more likely to leave.  
-- Job satisfaction plays a crucial role in retention.  
-- Implementing employee recognition programs can help improve retention rates.  
-
-## 📊 **Explore the complete interactive dashboard**  
-📎 **[View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYzNkZDFlN2EtZTY1Zi00NDQ1LTgyYmMtYmQ5NGNjZDM1MTg4IiwidCI6IjY1NDhkYzM4LWVkMTAtNGJiZC05NTZmLTVlNTM3NzVkYmI5ZCIsImMiOjR9)**  
-
-## 9. Recommendations  
-
-Based on the analysis, the following recommendations are suggested to reduce employee attrition:  
-
-- **Increase Compensation & Benefits:** Conduct regular salary benchmarking to ensure employees are competitively compensated.  
-- **Career Development Programs:** Provide growth opportunities through training, mentorship, and internal promotions.  
-- **Improve Work-Life Balance:** Introduce flexible work arrangements and wellness programs.  
-- **Enhance Employee Recognition:** Implement reward and recognition programs to boost job satisfaction.  
-
----  
-📄 **For a detailed analysis, access the full report.**  
-📎 **[Download Documentation (PDF)](https://github.com/PabloDabormida/HR-Analytics-Employee-Attrition-and-Performance/blob/main/Documentacion.pdf)**  
 
