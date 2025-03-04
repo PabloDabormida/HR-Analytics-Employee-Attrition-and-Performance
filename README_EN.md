@@ -104,12 +104,14 @@ This analysis will enable organizational leaders to make informed decisions to:
 • Identify critical areas affecting employee engagement, such as managerial management, the work environment, and development opportunities.  
 
 #### **Tactical Level**
-At a more operational level, the results of this analysis will help:  
+At a more operational level, the results of this analysis will help:
+
 • Prioritize training and development initiatives based on areas where performance gaps are identified.  
 • Optimize performance and satisfaction evaluation processes to ensure alignment with the organization's strategic objectives.  
 
-#### **Operational Level**<br>
+#### **Operational Level**
 Finally, the project will impact implementation in:  
+
 • Creation of personalized training and mentoring programs.  
 • Specific adjustments in work policies, such as hybrid schemes or support for employees with long commutes.  
 
